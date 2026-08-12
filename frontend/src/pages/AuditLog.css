@@ -1,0 +1,15 @@
+.audit-date {
+  white-space: nowrap;
+}
+
+.audit-action-badge {
+  background-color: var(--color-slate-100);
+  color: var(--color-slate-700);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.audit-details {
+  color: var(--color-slate-600);
+}

@@ -1,0 +1,44 @@
+.navbar {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-slate-200);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-user-info {
+  text-align: right;
+}
+
+.navbar-username {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-slate-800);
+  margin: 0;
+}
+
+.navbar-role {
+  font-size: 0.75rem;
+  color: var(--color-slate-500);
+  margin: 0;
+}
+
+.navbar-logout {
+  font-size: 0.875rem;
+  color: var(--color-slate-600);
+  background: none;
+  border: 1px solid var(--color-slate-300);
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.navbar-logout:hover {
+  color: var(--color-slate-900);
+}

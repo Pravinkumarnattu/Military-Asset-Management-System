@@ -1,0 +1,187 @@
+:root {
+  --color-white: #ffffff;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+
+  --color-emerald-600: #059669;
+  --color-amber-600: #d97706;
+  --color-red-600: #dc2626;
+  --color-green-600: #16a34a;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-800);
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Shared classes used across multiple pages, so each page doesn't
+   have to redefine the same title/message styles. */
+.page-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-slate-800);
+  margin: 0 0 1rem 0;
+}
+
+.error-text {
+  color: var(--color-red-600);
+  font-size: 0.875rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.success-text {
+  color: var(--color-green-600);
+  font-size: 0.875rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.data-table {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.data-table table {
+  font-size: 0.875rem;
+}
+
+.data-table thead {
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-600);
+  text-align: left;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.5rem 1rem;
+}
+
+.data-table tbody tr {
+  border-top: 1px solid var(--color-slate-100);
+}
+
+.data-table .empty-row {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--color-slate-400);
+}
+
+.record-form {
+  background-color: var(--color-white);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.form-field label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-slate-600);
+  margin-bottom: 0.25rem;
+}
+
+.form-field select,
+.form-field input {
+  border: 1px solid var(--color-slate-300);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.form-field--narrow input {
+  width: 7rem;
+}
+
+.primary-button {
+  background-color: var(--color-slate-800);
+  color: var(--color-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: var(--color-slate-700);
+}
+
+.primary-button--full {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .layout-main {
+    padding: 1rem;
+  }
+
+  .record-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-field,
+  .form-field--narrow {
+    width: 100%;
+  }
+
+  .form-field select,
+  .form-field input,
+  .form-field--narrow input {
+    width: 100%;
+  }
+
+  .primary-button {
+    width: 100%;
+  }
+
+  .dashboard-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+}

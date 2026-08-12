@@ -1,0 +1,46 @@
+.stat-card {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--color-blue-600);
+}
+
+.stat-card--blue {
+  border-left-color: var(--color-blue-600);
+}
+
+.stat-card--emerald {
+  border-left-color: var(--color-emerald-600);
+}
+
+.stat-card--amber {
+  border-left-color: var(--color-amber-600);
+}
+
+.stat-card--slate {
+  border-left-color: var(--color-slate-700);
+}
+
+.stat-card.clickable {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.stat-card.clickable:hover {
+  background-color: var(--color-slate-100);
+}
+
+.stat-card-label {
+  color: var(--color-slate-500);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.stat-card-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-slate-800);
+  margin: 0;
+}
