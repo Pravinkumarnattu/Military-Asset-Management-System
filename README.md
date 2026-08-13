@@ -34,6 +34,14 @@ throughout the component CSS files.
 3. Open `http://localhost:5173`, log in with one of the seeded test
    accounts (see `backend/README.md` for credentials).
 
+Test accounts
+
+| Role | Username | Password |
+|---|---|---|
+| Admin | admin_user | AdminPass123! |
+| Base Commander (Fort Alpha) | commander_alpha | CommandPass123! |
+| Logistics Officer | logistics_officer | LogisticsPass123! |
+
 ## What's been verified
 
 Both pieces were actually run and tested together in this session, not
