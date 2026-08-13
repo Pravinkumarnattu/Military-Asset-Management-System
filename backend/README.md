@@ -16,13 +16,13 @@ read and trace exactly what each request does.
    ```
 4. `npm run dev` (or `npm start`)
 
-Test accounts (all use password `Password123!`):
+Test accounts
 
-| Role | Username |
-|---|---|
-| Admin | admin_user |
-| Base Commander (Fort Alpha) | commander_alpha |
-| Logistics Officer | logistics_officer |
+| Role | Username | Password |
+|---|---|---|
+| Admin | admin_user | AdminPass123! |
+| Base Commander (Fort Alpha) | commander_alpha | CommandPass123! |
+| Logistics Officer | logistics_officer | LogisticsPass123! |
 
 ## RBAC Matrix
 
